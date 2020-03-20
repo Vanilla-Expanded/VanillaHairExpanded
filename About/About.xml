@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Vanilla Hair Expanded</name>
+    <author>Oskar Potocki, XeoNovaDan</author>
+    <url></url>
+    <description>We have all been there, with a colony of a hundred pawns where everyone looks somewhat the same. Starting colonists with no character to their looks. This mod is our attempt at fixing that.
+
+We have worked hard to create a hundred new hairstyles that fit vanilla RimWorld perfectly! From tribals to space refugees, every possible pawn receives a set of new, fitting styles that add much needed character and soul to them, and with so many new possibilities, it’s unlikely two of your pawns will look the same!
+
+And in case they do, one of our major features is a barber’s table - a workbench available to be built from the very start of the game, that allows you to change the hairstyle, colour and beard style of your pawns. Yes, you heard me right. We’re also adding 15 beards, which have a solid 20% chance to spawn on any male colonist! If, however, beards are not something you’re into, you can disable them in the mod settings!
+</description>
+    <supportedVersions>
+        <li>1.1</li>
+		<li>1.0</li>
+    </supportedVersions>
+	<packageId>VanillaExpanded.VHE</packageId>
+</ModMetaData>

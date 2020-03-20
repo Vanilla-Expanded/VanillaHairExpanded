@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Make certain body part groups hide beards if apparel covers those groups -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/BodyPartGroupDef[defName="FullHead" or defName="Teeth" or defName="Mouth"]</xpath>
+        <value>
+            <li Class="VanillaHairExpanded.BodyPartGroupDefExtension">
+                <hideBeardIfCovered>true</hideBeardIfCovered>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

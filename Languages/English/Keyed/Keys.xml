@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Settings -->
+    <VanillaHairExpanded.SettingsCategory>Vanilla Hair Expanded</VanillaHairExpanded.SettingsCategory>
+
+    <VanillaHairExpanded.Beards_ToolTip>Whether or not beards are rendered on pawns.</VanillaHairExpanded.Beards_ToolTip>
+
+    <!-- Float menu options -->
+    <VanillaHairExpanded.ChangeHairstyle>Change hairstyle</VanillaHairExpanded.ChangeHairstyle>
+
+    <!-- GUI -->
+    <VanillaHairExpanded.Hairstyles>Hairstyles</VanillaHairExpanded.Hairstyles>
+    <VanillaHairExpanded.Beards>Beards</VanillaHairExpanded.Beards>
+    <VanillaHairExpanded.CustomMode>Colour sliders</VanillaHairExpanded.CustomMode>
+    <VanillaHairExpanded.ColoursTied>Colours tied</VanillaHairExpanded.ColoursTied>
+    
+</LanguageData>

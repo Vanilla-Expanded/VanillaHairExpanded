@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>VHE_Farmboy</defName>
+    <label>farmboy</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Farmboy</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_Senator</defName>
+    <label>senator</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Senator</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_Smuggler</defName>
+    <label>smuggler</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Smuggler</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_Celebrity</defName>
+    <label>celebrity</label>
+    <hairGender>Male</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Celebrity</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_FlatAfro</defName>
+    <label>flat afro</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/FlatAfro</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_Karen</defName>
+    <label>karen</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Karen</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_LongPonytail</defName>
+    <label>long ponytail</label>
+    <hairGender>Female</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/LongPonytail</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>VHE_Sad</defName>
+    <label>sad</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Fancy/Sad</texPath>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+  </HairDef>
+
+</Defs>
