@@ -5,3 +5,6 @@ E:\Documents\Game Stuff\RimWorld\Modding\Misc\VanillaHairExpanded\Source\Vanilla
 D:\Game Stuff\RimWorld\Modding\Misc\VanillaHairExpanded\Source\VanillaHairExpanded\VanillaHairExpanded\obj\Debug\VanillaHairExpanded.csprojAssemblyReference.cache
 D:\Game Stuff\RimWorld\Modding\Misc\VanillaHairExpanded\Source\VanillaHairExpanded\VanillaHairExpanded\obj\Debug\VanillaHairExpanded.dll
 D:\Game Stuff\RimWorld\Modding\Misc\VanillaHairExpanded\1.1\Assemblies\VanillaHairExpanded.dll
+D:\Documents\GitHub\VanillaHairExpanded\1.1\Assemblies\VanillaHairExpanded.dll
+D:\Documents\GitHub\VanillaHairExpanded\Source\VanillaHairExpanded\VanillaHairExpanded\obj\Debug\VanillaHairExpanded.csprojAssemblyReference.cache
+D:\Documents\GitHub\VanillaHairExpanded\Source\VanillaHairExpanded\VanillaHairExpanded\obj\Debug\VanillaHairExpanded.dll

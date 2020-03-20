@@ -19,10 +19,12 @@ namespace VanillaHairExpanded
         public static class TryGenerateNewPawnInternal
         {
 
-            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, MethodBase method)
             {
                 var instructionList = instructions.ToList();
                 bool done = false;
+
+                int factionDefLocalIndex = method.GetMethodBody().LocalVariables.First(l => l.LocalType == typeof(FactionDef)).LocalIndex;
 
                 var hairDefInfo = AccessTools.Field(typeof(Pawn_StoryTracker), nameof(Pawn_StoryTracker.hairDef));
 
@@ -33,11 +35,11 @@ namespace VanillaHairExpanded
                     var instruction = instructionList[i];
 
                     // Add our beard generation code after the hair has been generated
-                    if (!done && instruction.opcode == OpCodes.Stfld && instruction.operand == hairDefInfo)
+                    if (!done && instruction.opcode == OpCodes.Stfld && instruction.OperandIs(hairDefInfo))
                     {
                         yield return instruction; // pawn.story.hairDef = PawnHairChooser.RandomHairDefFor(pawn, def)
                         yield return new CodeInstruction(OpCodes.Ldloc_0); // pawn
-                        yield return new CodeInstruction(OpCodes.Ldloc_S, 8); // def
+                        yield return new CodeInstruction(OpCodes.Ldloc_S, factionDefLocalIndex); // def
                         instruction = new CodeInstruction(OpCodes.Call, generateBeardInfo); // GenerateBeard(pawn, def)
                         done = true;
                     }
