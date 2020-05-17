@@ -22,8 +22,10 @@ namespace VanillaHairExpanded
 
         private static void PatchThingDefs()
         {
-            foreach (var tDef in DefDatabase<ThingDef>.AllDefs)
+            var thingDefs = DefDatabase<ThingDef>.AllDefsListForReading;
+            for (int i = 0; i < thingDefs.Count; i++)
             {
+                var tDef = thingDefs[i];
                 // Add beard comps to all eligible ThingDefs
                 if (typeof(Pawn).IsAssignableFrom(tDef.thingClass) && tDef.race != null && tDef.race.Humanlike)
                 {
@@ -37,8 +39,10 @@ namespace VanillaHairExpanded
 
         private static void ResolveErroredHairDefs()
         {
-            foreach (var hDef in DefDatabase<HairDef>.AllDefsListForReading)
+            var hairDefs = DefDatabase<HairDef>.AllDefsListForReading;
+            for (int i = 0; i < hairDefs.Count; i++)
             {
+                var hDef = hairDefs[i];
                 if (ContentFinder<Texture2D>.Get(hDef.texPath + "_north", false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_south", false) == null &&
                     ContentFinder<Texture2D>.Get(hDef.texPath + "_east", false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_west", false) == null)
                     badHairDefs.Add(hDef);

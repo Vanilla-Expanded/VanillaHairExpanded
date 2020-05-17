@@ -93,14 +93,18 @@ namespace VanillaHairExpanded
             Text.Anchor = TextAnchor.UpperLeft;
 
             hairListing.BeginScrollView(hairListRect, ref hairScrollVec2, ref hairViewRect);
-            foreach (var hDef in DefDatabase<HairDef>.AllDefs.OrderBy(h => h.LabelCap.RawText))
+            for (int i = 0; i < orderedHairDefs.Count; i++)
+            {
+                var hDef = orderedHairDefs[i];
                 if (!HairDefExtension.Get(hDef).isBeard)
                     DrawRow(hairListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.hairDef);
+            }
             hairListing.EndScrollView(ref hairViewRect);
 
             beardListing.BeginScrollView(beardListRect, ref beardScrollVec2, ref beardViewRect);
-            foreach (var hDef in DefDatabase<HairDef>.AllDefs.OrderBy(h => h.LabelCap.RawText))
+            for (int i = 0; i < orderedHairDefs.Count; i++)
             {
+                var hDef = orderedHairDefs[i];
                 if (HairDefExtension.Get(hDef).isBeard)
                 {
                     if (Pawn.GetComp<CompBeard>() is CompBeard beardComp)
@@ -327,6 +331,7 @@ namespace VanillaHairExpanded
         private Vector2 beardScrollVec2;
         private float beardViewRectHeight;
 
+        private static List<HairDef> orderedHairDefs = DefDatabase<HairDef>.AllDefs.OrderBy(h => h.LabelCap.RawText).ToList();
         private static Dictionary<string, string> truncatedLabelCache = new Dictionary<string, string>();
 
         private struct HairBeardCombination
