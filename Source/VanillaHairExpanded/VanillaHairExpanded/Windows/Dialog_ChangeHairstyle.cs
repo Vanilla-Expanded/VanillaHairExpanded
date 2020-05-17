@@ -193,25 +193,17 @@ namespace VanillaHairExpanded
             var textRect = rect.RightPartPixels(rect.width - rowHeight - usedListing.verticalSpacing);
             var originalFont = Text.Font;
             var originalAnchor = Text.Anchor;
+            Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.LowerLeft;
             string hairLabelCap = listedHair.LabelCap;
-            while (Text.CalcSize(hairLabelCap).x > textRect.width && Text.Font > GameFont.Tiny)
-                Text.Font--;
-            if (Text.CalcSize(hairLabelCap).x > textRect.width)
-                hairLabelCap.Shorten().Truncate(textRect.width, truncatedLabelCache);
             if (Text.CalcSize(hairLabelCap).x > textRect.width)
             {
-                string trimmedLabelCap = String.Empty;
-                int i = 0;
-                while (Text.CalcSize(trimmedLabelCap).x <= textRect.width)
-                {
-                    trimmedLabelCap += hairLabelCap[i];
-                    i++;
-                }
-                trimmedLabelCap.Remove(trimmedLabelCap.Length - 3, 3).Concat("...");
+                string hairLabelCapOriginal = hairLabelCap;
+                hairLabelCap = hairLabelCap.Truncate(textRect.width, truncatedLabelCache);
+                TooltipHandler.TipRegion(textRect, () => hairLabelCapOriginal, listedHair.GetHashCode());
             }
             Widgets.Label(textRect.TopHalf(), hairLabelCap);
-            Text.Font--;
+            Text.Font = GameFont.Tiny;
             Text.Anchor = TextAnchor.UpperLeft;
             Widgets.Label(textRect.BottomHalf(), $"{"WorkAmount".Translate()}: {((float)HairDefExtension.Get(listedHair).workToStyle).ToStringWorkAmount()}");
             Text.Font = originalFont;
