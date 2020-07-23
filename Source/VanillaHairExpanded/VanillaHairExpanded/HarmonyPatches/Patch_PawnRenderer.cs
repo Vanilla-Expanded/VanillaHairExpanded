@@ -48,7 +48,7 @@ namespace VanillaHairExpanded
                     }
 
                     // Looking for any assignments to 'bool flag'
-                    if (instruction.operand is LocalBuilder lb && lb.LocalIndex == 12)
+                    if (instruction.operand is LocalBuilder lb && lb.LocalIndex == 14)
                     {
                         if (instruction.opcode == OpCodes.Stloc_S)
                         {
@@ -64,8 +64,8 @@ namespace VanillaHairExpanded
                             {
                                 yield return instruction; // flag = true
                                 yield return new CodeInstruction(OpCodes.Ldloc_S, hideBeard.LocalIndex); // hideBeard
-                                yield return new CodeInstruction(OpCodes.Ldloc_S, 14); // apparelGraphics
-                                yield return new CodeInstruction(OpCodes.Ldloc_S, 15); // j
+                                yield return new CodeInstruction(OpCodes.Ldloc_S, 5); // apparelGraphics
+                                yield return new CodeInstruction(OpCodes.Ldloc_S, 16); // j
                                 yield return new CodeInstruction(OpCodes.Callvirt, getItemInfo); // apparelGraphics[j]
                                 yield return new CodeInstruction(OpCodes.Call, shouldHideBeardInfo); // ShouldHideBeard(hideBeard, apparelGraphics[j])
                                 instruction = new CodeInstruction(OpCodes.Stloc_S, hideBeard.LocalIndex); // hideBeard = ShouldHideBeard(hideBeard, apparelGraphics[j])
@@ -88,7 +88,7 @@ namespace VanillaHairExpanded
                 yield return new CodeInstruction(OpCodes.Ldarg_S, 6); // bodyDrawType
                 yield return new CodeInstruction(OpCodes.Ldarg_S, 8); // headStump
                 yield return new CodeInstruction(OpCodes.Ldarg_S, 5); // headFacing
-                yield return new CodeInstruction(OpCodes.Ldloc_S, 11); // loc2
+                yield return new CodeInstruction(OpCodes.Ldloc_S, 13); // loc2
                 yield return new CodeInstruction(OpCodes.Ldloc_0); // quaternion
                 yield return new CodeInstruction(OpCodes.Ldarg_S, 7); // portrait
                 yield return new CodeInstruction(OpCodes.Call, renderBeardInfo); // RenderBeard(this, hideBeard, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
