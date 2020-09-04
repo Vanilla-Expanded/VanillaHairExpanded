@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>VHE_BeardBoxed</defName>
+        <label>boxed</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardBoxed</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+    
+    <HairDef>
+        <defName>VHE_BeardCircle</defName>
+        <label>circle</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCircle</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+
+    <HairDef>
+        <defName>VHE_BeardCleanShaven</defName>
+        <label>clean shaven</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCleanShaven</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+                <randomlySelectable>false</randomlySelectable>
+                <workToStyle>150</workToStyle>
+            </li>
+        </modExtensions>
+    </HairDef>
+
+    <HairDef>
+        <defName>VHE_BeardUrist</defName>
+        <label>urist</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardUrist</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+
+    <HairDef>
+        <defName>VHE_BeardMuttonChops</defName>
+        <label>mutton chops</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardMuttonChops</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+
+    <HairDef>
+        <defName>VHE_BeardStubble</defName>
+        <label>stubble</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardStubble</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardCurly</defName>
+        <label>curly</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCurly</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardFork</defName>
+        <label>fork</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardFork</texPath>
+		<hairTags>
+			<li>Tribal</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardFrench</defName>
+        <label>french</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardFrench</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardGoatee</defName>
+        <label>goatee</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardGoatee</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardKhan</defName>
+        <label>khan</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardKhan</texPath>
+		<hairTags>
+			<li>Tribal</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardLincoln</defName>
+        <label>lincoln</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardLincoln</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardMoustache</defName>
+        <label>moustache</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardMoustache</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardOldDutch</defName>
+        <label>old dutch</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardOldDutch</texPath>
+		<hairTags>
+			<li>Punk</li>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardSeer</defName>
+        <label>Seer</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardSeer</texPath>
+		<hairTags>
+			<li>Tribal</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+	
+	<HairDef>
+        <defName>VHE_BeardVanDyke</defName>
+        <label>van dyke</label>
+        <hairGender>MaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardVanDyke</texPath>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <isBeard>true</isBeard>
+            </li>
+        </modExtensions>
+    </HairDef>
+
+</Defs>

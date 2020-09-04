@@ -10,6 +10,7 @@ We have worked hard to create a hundred new hairstyles that fit vanilla RimWorld
 And in case they do, one of our major features is a barber’s table - a workbench available to be built from the very start of the game, that allows you to change the hairstyle, colour and beard style of your pawns. Yes, you heard me right. We’re also adding 15 beards, which have a solid 20% chance to spawn on any male colonist! If, however, beards are not something you’re into, you can disable them in the mod settings!
 </description>
     <supportedVersions>
+        <li>1.2</li>
         <li>1.1</li>
 		<li>1.0</li>
     </supportedVersions>

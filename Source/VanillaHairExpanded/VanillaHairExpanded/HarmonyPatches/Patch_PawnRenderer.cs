@@ -25,7 +25,6 @@ namespace VanillaHairExpanded
                 bool hideHairDeclared = false;
                 bool hideHairAssigned = false;
                 bool hideHairChecked = false;
-                bool drawBeardCall = false;
 
                 var hideBeard = generator.DeclareLocal(typeof(bool));
 
@@ -74,19 +73,6 @@ namespace VanillaHairExpanded
                             }
                         }
                     }
-                    if (!drawBeardCall && hideHairAssigned && instructionList[i - 7].opcode == OpCodes.Ldloc_S && instructionList[i - 7].operand is LocalBuilder llb && llb.LocalIndex == 14)
-                    {
-                        yield return new CodeInstruction(OpCodes.Ldarg_0); // this
-                        yield return new CodeInstruction(OpCodes.Ldloc_S, hideBeard.LocalIndex); // hideBeard
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 6);                    // bodyDrawType
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 8);                    // headStump
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 5);                    // headFacing
-                        yield return new CodeInstruction(OpCodes.Ldloc_S, 13);                   // loc2
-                        yield return new CodeInstruction(OpCodes.Ldloc_0);                       // quaternion
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 7);                    // portrait
-                        yield return new CodeInstruction(OpCodes.Call,    renderBeardInfo);      // RenderBeard(this, hideBeard, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
-                        drawBeardCall = true;
-                    }
 
 
                     yield return instruction;
@@ -94,13 +80,27 @@ namespace VanillaHairExpanded
 
                 var lastInstruction = instructionList.Last();
 
+                //// Beard rendering
+                var renderBeardFirstParam = new CodeInstruction(OpCodes.Ldarg_0); // this
+                renderBeardFirstParam.labels.AddRange(lastInstruction.labels);
+                yield return renderBeardFirstParam;
+                yield return new CodeInstruction(OpCodes.Ldloc_S, hideBeard.LocalIndex); // hideBeard
+                yield return new CodeInstruction(OpCodes.Ldarg_S, 6); // bodyDrawType
+                yield return new CodeInstruction(OpCodes.Ldarg_S, 8); // headStump
+                yield return new CodeInstruction(OpCodes.Ldarg_S, 5); // headFacing
+                yield return new CodeInstruction(OpCodes.Ldloc_S, 13); // loc2
+                yield return new CodeInstruction(OpCodes.Ldloc_0); // quaternion
+                yield return new CodeInstruction(OpCodes.Ldarg_S, 7); // portrait
+                yield return new CodeInstruction(OpCodes.Call, renderBeardInfo); // RenderBeard(this, hideBeard, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
+
+                lastInstruction.labels.Clear();
                 yield return lastInstruction;
             }
 
             private static bool ShouldHideHeadgear(bool original)
             {
                 // Also check if there are any change hairstyle windows currently open
-                return original || Find.WindowStack.Windows.Any(w => w is Dialog_ChangeHairstyle);
+                return original || Find.WindowStack.Windows.Any(w => typeof(Dialog_ChangeHairstyle).IsAssignableFrom(w.GetType()));
             }
 
             private static bool ShouldHideBeard(bool hidden, ApparelGraphicRecord graphicRecord)
