@@ -13,6 +13,7 @@ namespace VanillaHairExpanded
 
     public class PawnKindDefExtension : DefModExtension
     {
+        public float beardFactor = 1f;
 
         private static readonly PawnKindDefExtension defaultValues = new PawnKindDefExtension();
 
@@ -31,7 +32,7 @@ namespace VanillaHairExpanded
             }
 
             // Gender-based
-            return BeardChanceFor(pawn.gender);
+            return BeardChanceFor(pawn.gender) * this.beardFactor;
         }
 
         public float BeardChanceFor(Gender gender)
