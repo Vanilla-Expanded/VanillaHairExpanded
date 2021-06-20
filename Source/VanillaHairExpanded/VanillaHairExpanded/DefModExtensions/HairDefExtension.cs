@@ -18,7 +18,6 @@ namespace VanillaHairExpanded
 
         public static HairDefExtension Get(Def def) => def.GetModExtension<HairDefExtension>() ?? defaultValues;
 
-        public bool isBeard = false;
         public bool randomlySelectable = true;
         public int workToStyle = 300;
 

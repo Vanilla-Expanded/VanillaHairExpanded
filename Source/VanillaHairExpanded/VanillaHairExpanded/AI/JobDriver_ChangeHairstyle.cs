@@ -53,16 +53,12 @@ namespace VanillaHairExpanded
                         if (newHairColour.HasValue)
                             pawn.story.hairColor = newHairColour.Value;
 
-                        if (pawn.GetComp<CompBeard>() is CompBeard beardComp)
-                        {
-                            if (newBeardDef != null)
-                                beardComp.beardDef = newBeardDef;
-                            if (newBeardColour.HasValue)
-                                beardComp.beardColour = newBeardColour.Value;
-                        }
-
+                        if (newBeardDef != null)
+                            this.pawn.style.beardDef = newBeardDef;
+                        
                         pawn.Drawer.renderer.graphics.ResolveAllGraphics();
                         PortraitsCache.SetDirty(pawn);
+                        GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
                         pawn.jobs.EndCurrentJob(JobCondition.Succeeded);
                     }
                 },
@@ -80,19 +76,17 @@ namespace VanillaHairExpanded
             Scribe_Defs.Look(ref newHairDef, "newHairDef");
             Scribe_Values.Look(ref newHairColour, "newHairColour");
             Scribe_Defs.Look(ref newBeardDef, "newBeardDef");
-            Scribe_Values.Look(ref newBeardColour, "newBeardColour");
             Scribe_Values.Look(ref ticksToRestyle, "ticksToRestyle");
             Scribe_Values.Look(ref restyleTicksDone, "restyleTicksDone");
         }
 
         private const TargetIndex TableIndex = TargetIndex.A;
 
-        private bool AnyChanges => newHairDef != null || newHairColour.HasValue || newBeardDef != null || newBeardColour.HasValue;
+        private bool AnyChanges => newHairDef != null || newHairColour.HasValue || newBeardDef != null;
 
         public HairDef newHairDef;
         public Color? newHairColour;
-        public HairDef newBeardDef;
-        public Color? newBeardColour;
+        public BeardDef newBeardDef;
         public int ticksToRestyle;
         private float restyleTicksDone;
 

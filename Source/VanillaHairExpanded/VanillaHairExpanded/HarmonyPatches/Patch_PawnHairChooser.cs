@@ -21,7 +21,7 @@ namespace VanillaHairExpanded
                 var extension = HairDefExtension.Get(hair);
 
                 // Don't include non-random or beards in the list of possible hairstyles
-                if (!extension.randomlySelectable || extension.isBeard)
+                if (!extension.randomlySelectable)
                 {
                     __result = false;
                     return false;

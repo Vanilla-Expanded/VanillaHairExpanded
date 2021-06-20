@@ -21,24 +21,13 @@ namespace VanillaHairExpanded
 
             //Harmony.DEBUG = true;
             VanillaHairExpanded.harmonyInstance.PatchAll();
-
+            return;
+            /*
             // PawnHairChooser.RandomHairDefFor anonymous
             VanillaHairExpanded.harmonyInstance.Patch(original: typeof(PawnHairChooser).GetNestedTypes(BindingFlags.NonPublic | BindingFlags.Instance).
                 First(t => t.GetMembers(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance).Any(m => m.Name.Contains("RandomHairDefFor"))).
                 GetMethods(BindingFlags.NonPublic | BindingFlags.Instance).First(m => m.ReturnType == typeof(bool)),
-                prefix: new HarmonyMethod(typeof(Patch_PawnHairChooser.manual_RandomHairDefFor), "Prefix"));
-
-            // EdB Prepare Carefully
-            if (ModCompatibilityCheck.EdBPrepareCarefully)
-            {
-                var providerHair = GenTypes.GetTypeInAnyAssembly("EdB.PrepareCarefully.ProviderHair", "EdB.PrepareCarefully");
-                if (providerHair != null)
-                    VanillaHairExpanded.harmonyInstance.Patch(AccessTools.Method(providerHair, "GetHairs", new Type[] { typeof(ThingDef), typeof(Gender) }),
-                        postfix: new HarmonyMethod(typeof(Patch_EdBPrepareCarefully_ProviderHair.manual_GetHairs), "Postfix"));
-                else
-                    Log.Error("Could not find type EdB.PrepareCarefully.ProviderHair in EdB Prepare Carefully.");
-            }
-
+                prefix: new HarmonyMethod(typeof(Patch_PawnHairChooser.manual_RandomHairDefFor), "Prefix"));*/
         }
 
     }

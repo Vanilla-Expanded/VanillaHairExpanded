@@ -34,7 +34,7 @@ namespace VanillaHairExpanded
         public override void WindowOnGUI()
         {
             // Update preview
-            newHairBeardCombo.ApplyToPawn(Pawn, coloursTied);
+            newHairBeardCombo.ApplyToPawn(Pawn);
             base.WindowOnGUI();
         }
 
@@ -65,7 +65,7 @@ namespace VanillaHairExpanded
             var previewRect = pawnConfirmationRect.TopPartPixels(pawnConfirmationRect.width);
             GUI.DrawTexture(previewRect, ColonistBar.BGTex);
             previewRect = previewRect.ContractedBy(6);
-            GUI.DrawTexture(previewRect, PortraitsCache.Get(Pawn, previewRect.size));
+            GUI.DrawTexture(previewRect, PortraitsCache.Get(Pawn, previewRect.size, Rot4.South));
 
             var fullOptionRectsArea = inRect.RightPart(0.6f);
             // Hair/beard options
@@ -77,8 +77,7 @@ namespace VanillaHairExpanded
             var hairListRect = hairRect.BottomPart(0.92f);
             Widgets.DrawMenuSection(hairListRect);
             hairListRect = hairListRect.ContractedBy(6);
-            var hairListing = new Listing_Standard();
-            var hairViewRect = new Rect(0, 0, hairListRect.width - 18, hairViewRectHeight);
+            var hairViewRect = new Rect(hairListRect.position.x, hairListRect.y, hairListRect.width - 18, hairViewRectHeight);
 
             var beardRect = optionRectsArea.RightHalf().ContractedBy(12);
             var beardHeadingRect = beardRect.TopPart(0.08f);
@@ -86,34 +85,38 @@ namespace VanillaHairExpanded
             var beardListRect = beardRect.BottomPart(0.92f);
             Widgets.DrawMenuSection(beardListRect);
             beardListRect = beardListRect.ContractedBy(6);
-            var beardListing = new Listing_Standard();
             var beardViewRect = new Rect(0, 0, beardListRect.width - 18, beardViewRectHeight);
 
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.UpperLeft;
 
-            hairListing.BeginScrollView(hairListRect, ref hairScrollVec2, ref hairViewRect);
-            for (int i = 0; i < orderedHairDefs.Count; i++)
-            {
-                var hDef = orderedHairDefs[i];
-                if (!HairDefExtension.Get(hDef).isBeard)
-                    DrawRow(hairListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.hairDef);
-            }
-            hairListing.EndScrollView(ref hairViewRect);
+            Rect hairViewRect2 = new Rect(hairViewRect);
+            hairViewRect2.height = 72 * orderedHairDefs.Count;
 
-            beardListing.BeginScrollView(beardListRect, ref beardScrollVec2, ref beardViewRect);
+            Rect beardViewRect2 = new Rect(beardViewRect);
+            beardViewRect2.height = 72 * orderedBeardDefs.Count;
+
+            Widgets.BeginScrollView(hairListRect, ref hairScrollVec2, hairViewRect2);
+            var hairListing = new Listing_Standard();
+            hairListing.Begin(hairViewRect2);
             for (int i = 0; i < orderedHairDefs.Count; i++)
             {
                 var hDef = orderedHairDefs[i];
-                if (HairDefExtension.Get(hDef).isBeard)
-                {
-                    if (Pawn.GetComp<CompBeard>() is CompBeard beardComp)
-                        DrawRow(beardListing, hDef, beardComp.beardColour, ref newHairBeardCombo.beardDef);
-                    else
-                        Log.Warning($"{Pawn} has null beardComp.");
-                }
+                DrawRow(hairListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.hairDef);
             }
-            beardListing.EndScrollView(ref beardViewRect);
+            hairListing.End();
+            Widgets.EndScrollView();
+
+            Widgets.BeginScrollView(beardListRect, ref beardScrollVec2, beardViewRect2);
+            var beardListing = new Listing_Standard();
+            beardListing.Begin(beardViewRect2);
+            for (int i = 0; i < orderedBeardDefs.Count; i++)
+            {
+                var hDef = orderedBeardDefs[i];
+                DrawRow(beardListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.beardDef);
+            }
+            beardListing.End();
+            Widgets.EndScrollView();
 
             hairViewRectHeight = hairListing.CurHeight;
             beardViewRectHeight = beardListing.CurHeight;
@@ -121,24 +124,14 @@ namespace VanillaHairExpanded
             // Colour selection
             var fullColourRectsArea = fullOptionRectsArea.BottomPart(0.25f).ContractedBy(12);
             var colourRectsArea = fullColourRectsArea.TopPart(0.7f);
-            if (coloursTied)
-            {
-                DrawColourChangeSection(colourRectsArea, ref newHairBeardCombo.hairColour);
-            }
-            else
-            {
-                DrawColourChangeSection(colourRectsArea.LeftPartPixels(colourRectsArea.width / 2 - 12), ref newHairBeardCombo.hairColour);
-                DrawColourChangeSection(colourRectsArea.RightPartPixels(colourRectsArea.width / 2 - 12), ref newHairBeardCombo.beardColour);
-            }
+            
+               DrawColourChangeSection(colourRectsArea, ref newHairBeardCombo.hairColour);
 
-            var fullCheckboxRectsArea = fullColourRectsArea.BottomPart(0.2f);
+                var fullCheckboxRectsArea = fullColourRectsArea.BottomPart(0.2f);
 
             var customCheckboxRect = fullCheckboxRectsArea.LeftPart(0.45f);
             Widgets.CheckboxLabeled(customCheckboxRect, "VanillaHairExpanded.CustomMode".Translate(), ref colourSliders);
-
-            var tiedCheckboxRect = fullCheckboxRectsArea.RightPart(0.45f);
-            Widgets.CheckboxLabeled(tiedCheckboxRect, "VanillaHairExpanded.ColoursTied".Translate(), ref coloursTied);
-
+            
             // Work amount, Reset and Confirm
             var workConfirmRect = pawnConfirmationRect.BottomPart(0.2f).LeftPart(0.9f).RightPart(8f / 9);
 
@@ -162,7 +155,7 @@ namespace VanillaHairExpanded
             }
         }
 
-        private void DrawRow(Listing_Standard usedListing, HairDef listedHair, Color colour, ref HairDef hairToChange)
+        private void DrawRow(Listing_Standard usedListing, StyleItemDef listedStyleItem, Color colour, ref StyleItemDef hairToChange)
         {
             const int rowHeight = 72;
             var originalColour = GUI.color;
@@ -171,7 +164,7 @@ namespace VanillaHairExpanded
             // Full-rect stuff
             if (Mouse.IsOver(rect))
                 Widgets.DrawHighlight(rect);
-            else if (listedHair == hairToChange)
+            else if (listedStyleItem == hairToChange)
             {
                 GUI.color = new Color(GUI.color.r, GUI.color.g, GUI.color.b, GUI.color.a * 0.5f);
                 GUI.DrawTexture(rect, TexUI.HighlightTex);
@@ -179,15 +172,15 @@ namespace VanillaHairExpanded
             }
             if (Widgets.ButtonInvisible(rect, true))
             {
-                hairToChange = listedHair;
+                hairToChange = listedStyleItem;
                 RimWorld.SoundDefOf.Click.PlayOneShotOnCamera();
             }
 
             // Preview image (consider poorly-configured defs)
-            if (!StaticConstructorClass.badHairDefs.Contains(listedHair))
+            if (!StaticConstructorClass.badHairDefs.Contains(listedStyleItem))
             {
                 var previewImageRect = rect.LeftPartPixels(rowHeight);
-                var hairGraphic = GraphicDatabase.Get<Graphic_Multi>(listedHair.texPath, ShaderDatabase.Cutout, Vector2.one, colour);
+                var hairGraphic = GraphicDatabase.Get<Graphic_Multi>(listedStyleItem.texPath, ShaderDatabase.Cutout, Vector2.one, colour);
                 GUI.color = colour;
                 GUI.DrawTexture(previewImageRect, hairGraphic.MatSouth.mainTexture);
                 GUI.color = originalColour;
@@ -199,17 +192,17 @@ namespace VanillaHairExpanded
             var originalAnchor = Text.Anchor;
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.LowerLeft;
-            string hairLabelCap = listedHair.LabelCap;
+            string hairLabelCap = listedStyleItem.LabelCap;
             if (Text.CalcSize(hairLabelCap).x > textRect.width)
             {
                 string hairLabelCapOriginal = hairLabelCap;
                 hairLabelCap = hairLabelCap.Truncate(textRect.width, truncatedLabelCache);
-                TooltipHandler.TipRegion(textRect, () => hairLabelCapOriginal, listedHair.GetHashCode());
+                TooltipHandler.TipRegion(textRect, () => hairLabelCapOriginal, listedStyleItem.GetHashCode());
             }
             Widgets.Label(textRect.TopHalf(), hairLabelCap);
             Text.Font = GameFont.Tiny;
             Text.Anchor = TextAnchor.UpperLeft;
-            Widgets.Label(textRect.BottomHalf(), $"{"WorkAmount".Translate()}: {((float)HairDefExtension.Get(listedHair).workToStyle).ToStringWorkAmount()}");
+            Widgets.Label(textRect.BottomHalf(), $"{"WorkAmount".Translate()}: {((float)HairDefExtension.Get(listedStyleItem).workToStyle).ToStringWorkAmount()}");
             Text.Font = originalFont;
             Text.Anchor = originalAnchor;
 
@@ -268,7 +261,7 @@ namespace VanillaHairExpanded
         {
             // Hair def
             if (newHairBeardCombo.hairDef != initHairBeardCombo.hairDef)
-                jobDriver.newHairDef = newHairBeardCombo.hairDef;
+                jobDriver.newHairDef = (HairDef) newHairBeardCombo.hairDef;
 
             // Hair colour
             if (!newHairBeardCombo.hairColour.IndistinguishableFrom(initHairBeardCombo.hairColour))
@@ -276,19 +269,15 @@ namespace VanillaHairExpanded
 
             // Beard def
             if (newHairBeardCombo.beardDef != initHairBeardCombo.beardDef)
-                jobDriver.newBeardDef = newHairBeardCombo.beardDef;
-
-            // Beard colour
-            if (!newHairBeardCombo.BeardColour(coloursTied).IndistinguishableFrom(initHairBeardCombo.BeardColour(coloursTied)))
-                jobDriver.newBeardColour = newHairBeardCombo.BeardColour(coloursTied);
-
+                jobDriver.newBeardDef = (BeardDef) newHairBeardCombo.beardDef;
+            
             jobDriver.ticksToRestyle = RestyleTicks;
         }
 
         public override void PostClose()
         {
             base.PostClose();
-            initHairBeardCombo.ApplyToPawn(Pawn, coloursTied);
+            initHairBeardCombo.ApplyToPawn(Pawn);
             jobDriver.ReadyForNextToil();
         }
 
@@ -306,10 +295,7 @@ namespace VanillaHairExpanded
 
                 if (newHairBeardCombo.beardDef != initHairBeardCombo.beardDef)
                     restyleTicks += HairDefExtension.Get(newHairBeardCombo.beardDef).workToStyle;
-
-                if (!newHairBeardCombo.BeardColour(coloursTied).IndistinguishableFrom(initHairBeardCombo.BeardColour(coloursTied)))
-                    restyleTicks += RecolourWorkTicks;
-
+                
                 return restyleTicks;
             }
         }
@@ -321,7 +307,6 @@ namespace VanillaHairExpanded
         private HairBeardCombination newHairBeardCombo;
         private JobDriver_ChangeHairstyle jobDriver;
 
-        private static bool coloursTied = true;
         private static bool colourSliders;
 
         private Pawn Pawn => jobDriver.pawn;
@@ -331,48 +316,35 @@ namespace VanillaHairExpanded
         private Vector2 beardScrollVec2;
         private float beardViewRectHeight;
 
-        private static List<HairDef> orderedHairDefs = DefDatabase<HairDef>.AllDefs.OrderBy(h => h.LabelCap.RawText).ToList();
+        private static List<HairDef>              orderedHairDefs     = DefDatabase<HairDef>.AllDefs.OrderBy(h => h.LabelCap.RawText).ToList();
+        private static List<BeardDef>             orderedBeardDefs     = DefDatabase<BeardDef>.AllDefs.OrderBy(h => h.LabelCap.RawText).ToList();
         private static Dictionary<string, string> truncatedLabelCache = new Dictionary<string, string>();
 
         private struct HairBeardCombination
         {
-
             public HairBeardCombination(Pawn pawn)
             {
                 hairDef = pawn.story.hairDef;
                 hairColour = pawn.story.hairColor;
 
-                var beardComp = pawn.GetComp<CompBeard>();
-                beardDef = beardComp?.beardDef;
-                beardColour = beardComp?.beardColour ?? default;
+                beardDef = pawn.style.beardDef;
             }
 
-            public void ApplyToPawn(Pawn pawn, bool coloursTied)
+            public void ApplyToPawn(Pawn pawn)
             {
-                pawn.story.hairDef = hairDef;
+                pawn.story.hairDef = (HairDef) hairDef;
                 pawn.story.hairColor = hairColour;
-                
-                if (pawn.GetComp<CompBeard>() is CompBeard beardComp)
-                {
-                    beardComp.beardDef = beardDef;
-                    beardComp.beardColour = BeardColour(coloursTied);
-                }
 
+                pawn.style.beardDef = (BeardDef) this.beardDef;
+                
                 pawn.Drawer.renderer.graphics.ResolveAllGraphics();
                 PortraitsCache.SetDirty(pawn);
             }
 
-            public Color BeardColour(bool coloursTied)
-            {
-                if (coloursTied)
-                    beardColour = hairColour;
-                return beardColour;
-            }
-
-            public HairDef hairDef;
+            public StyleItemDef hairDef;
             public Color hairColour;
-            public HairDef beardDef;
-            public Color beardColour;
+            public StyleItemDef beardDef;
+            //public Color beardColour;
 
         }
 

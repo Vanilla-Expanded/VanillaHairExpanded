@@ -26,9 +26,7 @@ namespace VanillaHairExpanded
 
         public static Graphic BeardGraphic(this PawnGraphicSet instance)
         {
-            if (instance.pawn.GetComp<CompBeard>() is CompBeard beardComp)
-                return beardComp.beardGraphic;
-            return null;
+            return instance.pawn.Drawer.renderer.graphics.beardGraphic;
         }
 
     }

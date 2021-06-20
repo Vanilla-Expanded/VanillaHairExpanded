@@ -14,7 +14,7 @@ namespace VanillaHairExpanded
     public static class HairDefOf
     {
 
-        public static HairDef VHE_BeardCleanShaven;
+        public static BeardDef VHE_BeardCleanShaven;
 
     }
 

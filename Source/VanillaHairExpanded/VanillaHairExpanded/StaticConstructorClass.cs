@@ -31,8 +31,6 @@ namespace VanillaHairExpanded
                 {
                     if (tDef.comps == null)
                         tDef.comps = new List<CompProperties>();
-                    if (!tDef.comps.Any(c => typeof(CompProperties_Beard).IsAssignableFrom(c.GetType())))
-                        tDef.comps.Add(new CompProperties_Beard());
                 }
             }
         }
