@@ -16,18 +16,9 @@ namespace VanillaHairExpanded
         public VanillaHairExpanded(ModContentPack content) : base(content)
         {
             harmonyInstance = new Harmony("OskarPotocki.VanillaHairExpanded");
-            settings = GetSettings<VanillaHairExpandedSettings>();
-        }
-
-        public override string SettingsCategory() => "VanillaHairExpanded.SettingsCategory".Translate();
-
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            settings.DoWindowContents(inRect);
         }
 
         public static Harmony harmonyInstance;
-        public static VanillaHairExpandedSettings settings;
 
     }
 

@@ -91,7 +91,6 @@
     <Compile Include="Things\Building_HairdressingTable.cs" />
     <Compile Include="StaticConstructorClass.cs" />
     <Compile Include="ModCompatibilityCheck.cs" />
-    <Compile Include="VanillaHairExpandedSettings.cs" />
     <Compile Include="VanillaHairExpanded.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Windows\Dialog_ChangeHairstyle.cs" />
