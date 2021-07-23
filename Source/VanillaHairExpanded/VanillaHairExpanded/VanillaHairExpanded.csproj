@@ -79,7 +79,6 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\LifeStageDefOf.cs" />
     <Compile Include="DefOf\SoundDefOf.cs" />
-    <Compile Include="DefOf\HairDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="Defs\ColourPresetDef.cs" />
     <Compile Include="HarmonyPatches\Patch_PawnRenderer.cs" />
