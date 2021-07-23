@@ -3,258 +3,285 @@
   <HairDef>
     <defName>VHE_Sanchez</defName>
     <label>sanchez</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/RicknMorty/Sanchez</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Mortimer</defName>
     <label>mortimer</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/RicknMorty/Mortimer</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Summer</defName>
     <label>summer</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/RicknMorty/Summer</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Jerry</defName>
     <label>jerry</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/RicknMorty/Jerry</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Beth</defName>
     <label>beth</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/RicknMorty/Beth</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Dapp</defName>
     <label>dapp</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Dapp</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Connor</defName>
     <label>connor</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Connor</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Flak</defName>
     <label>flak</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Flak</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Shelby</defName>
     <label>shelby</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Shelby</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Blinder</defName>
     <label>blinder</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Blinder</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Mohawk</defName>
     <label>mohawk</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Mohawk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Dusk</defName>
     <label>dusk</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Dusk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Faerie</defName>
     <label>faerie</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Faerie</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Cyberpunk</defName>
     <label>cyberpunk</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Cyberpunk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Raider</defName>
     <label>raider</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Raider</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Private</defName>
     <label>private</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Private</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Sarge</defName>
     <label>sarge</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Sarge</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Corporal</defName>
     <label>corporal</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Corporal</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Major</defName>
     <label>major</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Major</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_General</defName>
     <label>general</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/General</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Abigail</defName>
     <label>abigail</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Abigail</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Bill</defName>
     <label>bill</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Bill</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Dutch</defName>
     <label>dutch</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Dutch</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Grimshaw</defName>
     <label>grimshaw</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Grimshaw</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Rural</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Marston</defName>
     <label>marston</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Marston</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Micah</defName>
     <label>micah</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Micah</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Pearson</defName>
     <label>pearson</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Punk/Pearson</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+		<category>Punk</category>
   </HairDef>
 </Defs>

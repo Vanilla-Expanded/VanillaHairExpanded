@@ -3,188 +3,208 @@
   <HairDef>
     <defName>VHE_Dreadlock</defName>
     <label>dreadlock</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Dreadlock</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Mystic</defName>
     <label>mystic</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Mystic</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Straight</defName>
     <label>straight</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Straight</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Rural</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Twisted</defName>
     <label>twisted</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Twisted</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Rural</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Wrap</defName>
     <label>wrap</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Wrap</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Barren</defName>
     <label>barren</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Barren</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_BattleBraids</defName>
     <label>battle braids</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/BattleBraids</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_ScorpionKing</defName>
     <label>scorpion king</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/ScorpionKing</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_TuftHawk</defName>
     <label>tufthawk</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Tufthawk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Wilderness</defName>
     <label>wilderness</label>
-    <hairGender>MaleUsually</hairGender>
+    <styleGender>MaleUsually</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Wilderness</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_BraidedHawk</defName>
     <label>braided hawk</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/BraidedHawk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_FireKeeper</defName>
     <label>fire keeper</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/FireKeeper</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
     <HairDef>
     <defName>VHE_Hunter</defName>
     <label>hunter</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Hunter</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Tribal</defName>
     <label>tribal</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Tribal</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Warrior</defName>
     <label>warrior</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Warrior</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Punk</li>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
     <HairDef>
     <defName>VHE_BattleBraid</defName>
     <label>battle knot</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/BattleKnot</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
     <HairDef>
     <defName>VHE_DoubleHawk</defName>
     <label>double hawk</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/DoubleHawk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_HalfShaved</defName>
     <label>half-shaved</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/HalfShaved</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Tower</defName>
     <label>tower</label>
-    <hairGender>FemaleUsually</hairGender>
+    <styleGender>FemaleUsually</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Tower</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Spikey</defName>
     <label>spikey</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Tribal/Spikey</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Tribal</li>
-		</hairTags>
+		</styleTags>
+    <category>Tribal</category>
   </HairDef>
 </Defs>
