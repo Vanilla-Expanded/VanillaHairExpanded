@@ -102,7 +102,7 @@ namespace VanillaHairExpanded
             for (int i = 0; i < orderedHairDefs.Count; i++)
             {
                 var hDef = orderedHairDefs[i];
-                DrawRow(hairListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.hairDef);
+                DrawRow(hairListing, hDef, Pawn.story.HairColor, ref newHairBeardCombo.hairDef);
             }
             hairListing.End();
             Widgets.EndScrollView();
@@ -113,7 +113,7 @@ namespace VanillaHairExpanded
             for (int i = 0; i < orderedBeardDefs.Count; i++)
             {
                 var hDef = orderedBeardDefs[i];
-                DrawRow(beardListing, hDef, Pawn.story.hairColor, ref newHairBeardCombo.beardDef);
+                DrawRow(beardListing, hDef, Pawn.story.HairColor, ref newHairBeardCombo.beardDef);
             }
             beardListing.End();
             Widgets.EndScrollView();
@@ -325,7 +325,7 @@ namespace VanillaHairExpanded
             public HairBeardCombination(Pawn pawn)
             {
                 hairDef = pawn.story.hairDef;
-                hairColour = pawn.story.hairColor;
+                hairColour = pawn.story.HairColor;
 
                 beardDef = pawn.style.beardDef;
             }
@@ -333,7 +333,7 @@ namespace VanillaHairExpanded
             public void ApplyToPawn(Pawn pawn)
             {
                 pawn.story.hairDef = (HairDef) hairDef;
-                pawn.story.hairColor = hairColour;
+                pawn.story.HairColor = hairColour;
 
                 pawn.style.beardDef = (BeardDef) this.beardDef;
                 

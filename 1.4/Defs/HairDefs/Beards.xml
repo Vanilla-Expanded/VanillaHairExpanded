@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BeardDef>
+        <defName>VHE_BeardBoxed</defName>
+        <label>boxed</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardBoxed</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardTribal</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+    
+    <BeardDef>
+        <defName>VHE_BeardCircle</defName>
+        <label>circle</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCircle</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardTribal</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+
+    <BeardDef>
+        <defName>VHE_BeardCleanShaven</defName>
+        <label>clean shaven</label>
+        <styleGender>Any</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCleanShaven</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardTribal</li>
+			<li>BeardRural</li>
+		</styleTags>
+        <modExtensions>
+            <li Class="VanillaHairExpanded.HairDefExtension">
+                <randomlySelectable>false</randomlySelectable>
+                <workToStyle>150</workToStyle>
+            </li>
+        </modExtensions>
+    </BeardDef>
+
+    <BeardDef>
+        <defName>VHE_BeardUrist</defName>
+        <label>urist</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardUrist</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardUrban</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+
+    <BeardDef>
+        <defName>VHE_BeardMuttonChops</defName>
+        <label>mutton chops</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardMuttonChops</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+
+    <BeardDef>
+        <defName>VHE_BeardStubble</defName>
+        <label>stubble</label>
+        <styleGender>Any</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardStubble</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardUrban</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardCurly</defName>
+        <label>curly</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardCurly</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardTribal</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardFork</defName>
+        <label>fork</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardFork</texPath>
+		<styleTags>
+			<li>BeardTribal</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardFrench</defName>
+        <label>french</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardFrench</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardGoatee</defName>
+        <label>goatee</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardGoatee</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardKhan</defName>
+        <label>khan</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardKhan</texPath>
+		<styleTags>
+			<li>BeardTribal</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardLincoln</defName>
+        <label>lincoln</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardLincoln</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardMoustache</defName>
+        <label>moustache</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardMoustache</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardOldDutch</defName>
+        <label>old dutch</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardOldDutch</texPath>
+		<styleTags>
+			<li>BeardPunk</li>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardSeer</defName>
+        <label>Seer</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardSeer</texPath>
+		<styleTags>
+			<li>BeardTribal</li>
+		</styleTags>
+    </BeardDef>
+	
+	<BeardDef>
+        <defName>VHE_BeardVanDyke</defName>
+        <label>van dyke</label>
+        <styleGender>MaleUsually</styleGender>
+        <texPath>Things/Pawn/Humanlike/Beards/BeardVanDyke</texPath>
+		<styleTags>
+			<li>BeardRural</li>
+		</styleTags>
+    </BeardDef>
+
+</Defs>

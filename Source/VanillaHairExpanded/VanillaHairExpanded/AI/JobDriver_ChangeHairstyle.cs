@@ -51,7 +51,7 @@ namespace VanillaHairExpanded
                         if (newHairDef != null)
                             pawn.story.hairDef = newHairDef;
                         if (newHairColour.HasValue)
-                            pawn.story.hairColor = newHairColour.Value;
+                            pawn.story.HairColor = newHairColour.Value;
 
                         if (newBeardDef != null)
                             this.pawn.style.beardDef = newBeardDef;
