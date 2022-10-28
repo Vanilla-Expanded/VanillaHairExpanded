@@ -177,7 +177,7 @@ namespace VanillaHairExpanded
             }
 
             // Preview image (consider poorly-configured defs)
-            if (!StaticConstructorClass.badHairDefs.Contains(listedStyleItem))
+            if (!StaticConstructorClass.badHairDefs.Contains(listedStyleItem) && !listedStyleItem.texPath.NullOrEmpty())
             {
                 var previewImageRect = rect.LeftPartPixels(rowHeight);
                 var hairGraphic = GraphicDatabase.Get<Graphic_Multi>(listedStyleItem.texPath, ShaderDatabase.Cutout, Vector2.one, colour);

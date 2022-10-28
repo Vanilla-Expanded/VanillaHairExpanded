@@ -47,8 +47,7 @@ namespace VanillaHairExpanded
             }
             if (badHairDefs.Any())
             {
-                var errorStrings = new List<string>();
-                badHairDefs.ForEach(h => errorStrings.Add($"{h.defName} (from {h.modContentPack?.Name ?? "unknown source"})"));
+                var errorStrings = badHairDefs.Select(h => $"{h.defName} (from {h.modContentPack?.Name ?? "unknown source"})");
                 Log.Error($"The following HairDefs have misconfigured texPaths or missing textures: {errorStrings.ToCommaList()}");
             }
         }
