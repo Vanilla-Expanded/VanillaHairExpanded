@@ -41,8 +41,8 @@ namespace VanillaHairExpanded
             for (int i = 0; i < hairDefs.Count; i++)
             {
                 var hDef = hairDefs[i];
-                if (ContentFinder<Texture2D>.Get(hDef.texPath + "_north", false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_south", false) == null &&
-                    ContentFinder<Texture2D>.Get(hDef.texPath + "_east", false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_west", false) == null)
+                if (hDef != HairDefOf.Bald && ContentFinder<Texture2D>.Get(hDef.texPath + "_north", false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_south", false) == null &&
+                    ContentFinder<Texture2D>.Get(hDef.texPath                        + "_east",  false) == null && ContentFinder<Texture2D>.Get(hDef.texPath + "_west",  false) == null)
                     badHairDefs.Add(hDef);
             }
             if (badHairDefs.Any())
