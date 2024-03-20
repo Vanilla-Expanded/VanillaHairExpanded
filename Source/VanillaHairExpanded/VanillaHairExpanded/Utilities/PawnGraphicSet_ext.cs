@@ -11,7 +11,7 @@ using HarmonyLib;
 namespace VanillaHairExpanded
 {
 
-    public static class PawnGraphicSet_Ext
+   /* public static class PawnGraphicSet_Ext
     {
 
         public static Material BeardMatAt(this PawnGraphicSet instance, Rot4 facing)
@@ -29,6 +29,6 @@ namespace VanillaHairExpanded
             return instance.pawn.Drawer.renderer.graphics.beardGraphic;
         }
 
-    }
+    }*/
 
 }

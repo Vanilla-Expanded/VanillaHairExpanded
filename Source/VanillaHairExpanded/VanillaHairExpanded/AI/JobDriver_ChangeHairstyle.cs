@@ -55,8 +55,8 @@ namespace VanillaHairExpanded
 
                         if (newBeardDef != null)
                             this.pawn.style.beardDef = newBeardDef;
-                        
-                        pawn.Drawer.renderer.graphics.ResolveAllGraphics();
+
+                        pawn.Drawer.renderer.SetAllGraphicsDirty();// graphics.ResolveAllGraphics();
                         PortraitsCache.SetDirty(pawn);
                         GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
                         pawn.jobs.EndCurrentJob(JobCondition.Succeeded);

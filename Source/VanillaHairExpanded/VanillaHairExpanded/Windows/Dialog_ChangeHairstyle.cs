@@ -336,8 +336,8 @@ namespace VanillaHairExpanded
                 pawn.story.HairColor = hairColour;
 
                 pawn.style.beardDef = (BeardDef) this.beardDef;
-                
-                pawn.Drawer.renderer.graphics.ResolveAllGraphics();
+                pawn.Drawer.renderer.SetAllGraphicsDirty();
+                //pawn.Drawer.renderer.graphics.ResolveAllGraphics();
                 PortraitsCache.SetDirty(pawn);
             }
 

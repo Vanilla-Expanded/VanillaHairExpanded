@@ -3,91 +3,101 @@
   <HairDef>
     <defName>VHE_Annointed</defName>
     <label>annointed</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Annointed</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+    <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Chosen</defName>
     <label>chosen</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Chosen</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+    <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Distinguished</defName>
     <label>distinguished</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Distinguished</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Hardened</defName>
     <label>hardened</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Hardened</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Monk</defName>
     <label>monk</label>
-    <hairGender>Male</hairGender>
+    <styleGender>Male</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Monk</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Mother</defName>
     <label>mother</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Mother</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Princess</defName>
     <label>princess</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Princess</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Queen</defName>
     <label>queen</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Queen</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Unkept</defName>
     <label>unkept</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Unkept</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
   <HairDef>
     <defName>VHE_Widow</defName>
     <label>widow</label>
-    <hairGender>Female</hairGender>
+    <styleGender>Female</styleGender>
     <texPath>Things/Pawn/Humanlike/Medieval/Widow</texPath>
-		<hairTags>
+		<styleTags>
 			<li>Medieval</li>
-		</hairTags>
+		</styleTags>
+  <category>Medieval</category>
   </HairDef>
 </Defs>
