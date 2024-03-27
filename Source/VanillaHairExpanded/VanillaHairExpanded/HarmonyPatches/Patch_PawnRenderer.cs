@@ -15,16 +15,23 @@ namespace VanillaHairExpanded
     public static class Patch_PawnRenderer
     {
 
-        [HarmonyPatch(typeof(PawnRenderer), "DrawHeadHair")]
+        [HarmonyPatch]
         public static class RenderPawnInternal
         {
+            [HarmonyTargetMethods]
+            public static IEnumerable<MethodBase> TargetMethods()
+            {
+                yield return AccessTools.Method(typeof(PawnRenderNodeWorker_Apparel_Head), nameof(PawnRenderNodeWorker_Apparel_Head.CanDrawNow));
+                yield return AccessTools.Method(typeof(PawnRenderNodeWorker_Apparel_Head), nameof(PawnRenderNodeWorker_Apparel_Head.HeadgearVisible));
+            }
 
+            [HarmonyTranspiler]
             public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator, MethodBase method)
             {
                 var instructionList = instructions.ToList();
                 bool hideHairDeclared = false;
 
-                var getHatsOnlyOnMapInfo = AccessTools.Property(typeof(Prefs), nameof(Prefs.HatsOnlyOnMap)).GetGetMethod();
+                var getHatsOnlyOnMapInfo = AccessTools.PropertyGetter(typeof(Prefs), nameof(Prefs.HatsOnlyOnMap));
 
                 var shouldHideHeadgearInfo = AccessTools.Method(typeof(RenderPawnInternal), nameof(ShouldHideHeadgear));
 
@@ -33,7 +40,7 @@ namespace VanillaHairExpanded
                     var instruction = instructionList[i];
 
                     // Looking for calls to Prefs.HatsOnlyOnMap
-                    if (instruction.opcode == OpCodes.Call && (MethodInfo)instruction.operand == getHatsOnlyOnMapInfo)
+                    if (instruction.Calls(getHatsOnlyOnMapInfo))
                     {
                         yield return instruction;
                         instruction = new CodeInstruction(OpCodes.Call, shouldHideHeadgearInfo);
