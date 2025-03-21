@@ -5,8 +5,4 @@
 		<defName>Medieval</defName>
 		<label>medieval</label>
 	</StyleItemCategoryDef>
-	<StyleItemCategoryDef>
-		<defName>VHE_Viking</defName>
-		<label>viking</label>
-	</StyleItemCategoryDef>
 </Defs>

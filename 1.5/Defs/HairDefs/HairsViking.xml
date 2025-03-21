@@ -8,8 +8,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>HairLong</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Erik</defName>
@@ -19,8 +20,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>Punk</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Bjorn</defName>
@@ -29,8 +31,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Bjorn</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Egil</defName>
@@ -39,8 +42,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Egil</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Freydis</defName>
@@ -50,8 +54,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>Punk</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Frida</defName>
@@ -61,8 +66,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>Shaved</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Gunnar</defName>
@@ -72,8 +78,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>Punk</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Halfdan</defName>
@@ -82,8 +89,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Halfdan</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Harald</defName>
@@ -92,8 +100,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Harald</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Helga</defName>
@@ -102,8 +111,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Helga</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Lagertha</defName>
@@ -112,9 +122,10 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Lagertha</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 			<li>Punk</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Ragnar</defName>
@@ -124,8 +135,9 @@
 		<styleTags>
 			<li>Tribal</li>
 			<li>Punk</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Sigurd</defName>
@@ -134,8 +146,9 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Sigurd</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 	<HairDef>
 		<defName>VHE_Ulfrik</defName>
@@ -144,7 +157,8 @@
 		<texPath>Things/Pawn/Humanlike/Viking/Ulfrik</texPath>
 		<styleTags>
 			<li>Tribal</li>
+			<li>Medieval</li>
 		</styleTags>
-		<category>VHE_Viking</category>
+		<category>Medieval</category>
 	</HairDef>
 </Defs>
