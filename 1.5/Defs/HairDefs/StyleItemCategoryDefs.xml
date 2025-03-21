@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <!-- Categories -->
-
-  <StyleItemCategoryDef>
-    <defName>Medieval</defName>
-    <label>medieval</label>
-  </StyleItemCategoryDef>
-
+	<!-- Categories -->
+	<StyleItemCategoryDef>
+		<defName>Medieval</defName>
+		<label>medieval</label>
+	</StyleItemCategoryDef>
+	<StyleItemCategoryDef>
+		<defName>VHE_Viking</defName>
+		<label>viking</label>
+	</StyleItemCategoryDef>
 </Defs>
