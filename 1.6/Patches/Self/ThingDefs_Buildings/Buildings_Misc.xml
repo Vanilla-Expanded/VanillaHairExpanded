@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Remove barber's table if Facial Stuff is active -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Facial Stuff 1.0</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VHE_TableBarber"]</xpath>
+        </match>
+    </Operation>
+
+</Patch>
